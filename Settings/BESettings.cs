@@ -100,7 +100,7 @@ namespace Settings {
         SearchBarWidth = Convert.ToDouble(rksRoot.GetValue("SearchBarWidth", 220));
         OverwriteImageWhileEditing = rksRoot.GetValue("OverwriteImageWhileEditing", "False").ToBoolean();
         SavedTabsDirectory = rksRoot.GetValue("SavedTabsDirectory", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\BExplorer_SavedTabs\\").ToString();
-        OpenedTabs = rksRoot.GetValue("OpenedTabs").ToString();
+        OpenedTabs = rksRoot.GetValue("OpenedTabs", string.Empty).ToString();
         LastWindowWidth = Convert.ToDouble(rksRoot.GetValue("LastWindowWidth", 640));
         LastWindowHeight = Convert.ToDouble(rksRoot.GetValue("LastWindowHeight", 480));
         LastWindowPosLeft = Convert.ToDouble(rksRoot.GetValue("LastWindowPosLeft", 0));
